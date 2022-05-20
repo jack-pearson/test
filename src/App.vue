@@ -2,7 +2,7 @@
  * @Author: jack-pearson qize953463876@gmail.com
  * @Date: 2022-05-17 16:42:27
  * @LastEditors: jack-pearson qize953463876@gmail.com
- * @LastEditTime: 2022-05-18 15:23:25
+ * @LastEditTime: 2022-05-20 12:22:06
  * @FilePath: /andeng-largescreen-merge/src/App.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -28,7 +28,6 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="test"></div>
   <iframe id="frame" class="id" :src="url" frameborder="0" scrolling="no"></iframe>
 </template>
 
@@ -51,13 +50,6 @@ body {
 .id {
   width: 100%;
   height: 100%;
-}
-.test {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
+  display: block;
 }
 </style>
